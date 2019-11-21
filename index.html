@@ -8,10 +8,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="style.css"> 
     <title>Instagram Feed</title>
   </head>
   <body>
+  <!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Vetty's new new post:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input class="form-control mr-sm-2" type="search" placeholder="What's on your mind?" aria-label="Search">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
     </button>
 
@@ -23,7 +45,10 @@
        </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button type="button" class="btn btn-success">Create a new post</button>
+      <!-- Button trigger modal -->
+<button type=" m button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+  Create a Post
+</button>
     </form>
       <a class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +65,7 @@
 
 <!-- nav - content -->
 
-
+<br/>
 <ul class="justify-content-center nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
@@ -107,12 +132,15 @@
         <img src="https://cdn.pixabay.com/photo/2019/11/18/00/38/brown-and-white-dog-4633734__340.jpg" class="card-img-top" alt="...">
        </div>
        <div class="bg-white card-footer text-muted">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-comment"></i>
+        <i class="fa fa-paper-plane"></i>     
         <span> 441 likes </span>
         <i class="float-right fa fa-ellipsis-v"></i>
         <p> And from now on you're all named Bender Jr. Who am I making this out to? Who am I making this out to? Kids have names?? </p>
        </div>
     </div>
-
+<br/>
 <div class="w-50 mx-auto card text-left">
   <div class="card-header bg-white">
     My Second Photo
@@ -124,11 +152,10 @@
       <span> 784 likes </span>
     <i class="float-right fa fa-ellipsis-v"></i>
     <p> Five hours? Aw, man! Couldn't you just get me the death penalty? I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'!
-
 </p>
   </div>
 </div>
-
+<br/>
 <div class="w-50 mx-auto card text-left">
   <div class="card-header bg-white">
     My Third Photo
@@ -143,7 +170,7 @@
         </p>
   </div>
 </div>
-
+<br/>
 <div class="w-50 mx-auto card text-left">
   <div class="card-header bg-white">
     My Fourth Photo
@@ -152,40 +179,42 @@
   <img src="https://cdn.pixabay.com/photo/2019/11/02/01/15/dj-4595492__340.jpg" class="card-img-top" alt="...">
         </div>
   <div class="card-footer text-muted bg-white">
-      <span> 41 likes </span>
+      <span> 418 likes </span>
     <i class="float-right fa fa-ellipsis-v"></i>
-    <p> And from now on you're all named Bender Jr. Who am I making this out to? Who am I making this out to? Kids have names?? </p>
+    <p> This is the worst kind of discrimination: the kind against me! Really?! Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Yes. You gave me a dollar and some candy.
+    </p>
   </div>
 </div>
-
+<br/>
 <div class="w-50 mx-auto card text-left">
   <div class="card-header bg-white">
-    My First Photo
+    My Fifth Photo
   </div>
   <div class="p-0 card-body">
-  <img src="https://cdn.pixabay.com/photo/2019/11/18/00/38/brown-and-white-dog-4633734__340.jpg" class="card-img-top" alt="...">
+  <img src="https://cdn.pixabay.com/photo/2019/11/06/17/26/gear-4606749__340.jpg" class="card-img-top" alt="...">
         </div>
   <div class="card-footer text-muted bg-white">
-      <span> 41 likes </span>
+      <span> 410 likes </span>
     <i class="float-right fa fa-ellipsis-v"></i>
-    <p> And from now on you're all named Bender Jr. Who am I making this out to? Who am I making this out to? Kids have names?? </p>
+    <p> These old Doomsday Devices are dangerously unstable. I'll rest easier not knowing where they are. Robot 1-X, save my friends! And Zoidberg! Oh dear! She's stuck in an infinite loop, and he's an idiot! Well, that's love for you.</p>
+    <p> Also Zoidberg. Kif, I have mated with a woman. Inform the men. Fry! Quit doing the right thing, you jerk! Look, last night was a mistake. </p>
   </div>
 </div>
-
+<br/>
 <div class="w-50 mx-auto card text-left">
   <div class="card-header bg-white">
-    My First Photo
+    My Sixth Photo
   </div>
   <div class="p-0 card-body">
-  <img src="https://cdn.pixabay.com/photo/2019/11/18/00/38/brown-and-white-dog-4633734__340.jpg" class="card-img-top" alt="...">
+  <img src="https://cdn.pixabay.com/photo/2019/09/16/17/28/cat-4481566__340.jpg" class="card-img-top" alt="...">
         </div>
   <div class="card-footer text-muted bg-white">
-      <span> 41 likes </span>
+      <span> 8941 likes </span>
     <i class="float-right fa fa-ellipsis-v"></i>
-    <p> And from now on you're all named Bender Jr. Who am I making this out to? Who am I making this out to? Kids have names?? </p>
+    <p> Bender, quit destroying the universe! Yeah. Give a little credit to our public schools. You, a bobsleder!? That I'd like to see! But existing is basically all I do! I don't want to be rescued. Daddy Bender, we're hungry. </p>
   </div>
 </div>
-
+<br/>
 </div>
   
 </div>
